@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Agregar datos</title>
+</head>
+
+<body>
+	<a href="index.php">Inicio</a> | <a href="ver.php">Ver Productos</a> | <a href="cerrar.php">Cerrar Sesion</a>
+	<br/><br/>
+
+	<form name="form1" method="post" action="agregar.php">
+		<table border="0">
+			<tr>
+				<td>ID Producto</td>
+				<td><input type="text" name="idproducto"></td>
+			</tr>
+			<tr>
+				<td>Marca de la maqina</td>
+				<td><input type="text" name="marca"></td>
+			</tr>
+			<tr>
+				<td>Modelo de la maquina</td>
+				<td><input type="text" name="modelo"></td>
+			</tr>
+			<tr>
+				<td>Costo</td>
+				<td><input type="text" name="costo"></td>
+			</tr>
+			<tr>
+				<td>Color</td>
+				<td><input type="text" name="color"></td>
+			</tr>
+			<tr>
+				<td>Cantidad</td>
+				<td><input type="text" name="cantidad"></td>
+			</tr>
+			<tr>
+				<td>Marca de cuchillas</td>
+				<td><input type="text" name="marcacuchillas"></td>
+			</tr>
+			<tr>
+				<td>Tipo de maquina</td>
+				<td><input type="text" name="tipomaquina"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="inicio_id" value="<?php echo $_GET['inicio_id']; ?>"></td>
+				<td><input type="submit" name="update" value="agregar"></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+</body>
+</html>
